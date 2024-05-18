@@ -1,0 +1,99 @@
+Gryffindor = 0
+Ravenclaw = 0
+Hufflepuff = 0
+Slytherin = 0 
+
+
+print("===============")
+print("sorteo sombreo")
+print("===============")
+
+
+
+##########################pregunta 1###########################################
+print("Q1. Que te gusta mas el amanecer o el atardecer: ")
+print("1) Amanecer")
+print("2) Atardecer")
+
+respuesta = int(input("ingresa opcion 1 o 2:  "))
+
+if respuesta == 1:
+    Gryffindor += 1
+    Ravenclaw += 1
+elif respuesta == 2:
+    Hufflepuff += 1
+    Slytherin += 1
+else:
+    print("entrada incorrect.")
+
+##########################pregunta 2###########################################
+print("Q2. Cuando esté muerto, quiero que la gente me recuerde como: ")
+print("1) El bueno")
+print("2) El programador")
+print("3) El que no se rindio")
+print("4) El mejor")
+
+respuesta = int(input("ingresa opcion del 1 al 4:  "))
+
+if respuesta == 1:
+    Hufflepuff += 2
+
+elif respuesta == 2:
+    Slytherin += 2
+
+elif respuesta == 3:
+    Ravenclaw += 2
+
+elif respuesta == 4:
+    Gryffindor += 2 
+     
+else:
+    print("entrada incorrect.")
+
+##########################pregunta 3###########################################
+    
+print("Q3. ¿Qué tipo de instrumento le agrada más al oído? ")
+print("1) El violín")
+print("2) La trompeta")
+print("3) El piano")
+print("4) El tambor")
+
+respuesta = int(input("ingresa opcion del 1 al 4:  "))
+
+
+if respuesta == 1:
+   Slytherin  += 4
+
+elif respuesta == 2:
+    Hufflepuff += 4
+
+elif respuesta == 3:
+    Ravenclaw += 4
+
+elif respuesta == 4:
+    Gryffindor += 4 
+
+else:
+
+    print("entrada incorrecta.")
+
+
+#################imprime resultado de las casas###################
+print ("gryffindor", Gryffindor)
+print("hufflepuff", Hufflepuff)
+print("Slytherin", Slytherin)
+print("Raven claw", Ravenclaw)
+
+
+###############elegir a la ganadora#############################
+
+if Gryffindor >= Hufflepuff and Gryffindor >= Slytherin and Gryffindor >= Ravenclaw:
+    print("Gryffindor")
+
+elif Hufflepuff >= Slytherin and Hufflepuff >= Ravenclaw:
+    print("Hufflwpuff")
+
+elif Slytherin >= Ravenclaw:
+    print ("Slytherin")
+else:
+    print ("Raven claw")
